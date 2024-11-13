@@ -1,0 +1,34 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    kuka_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    robotiq_controller:
+      type: position_controllers/GripperActionController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+kuka_controller:
+  ros__parameters:
+    joints:
+      - A1
+      - A2
+      - A3
+      - A4
+      - A5
+      - A6
+      - A7
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+robotiq_controller:
+  ros__parameters:
+    joint: robotiq_85_left_knuckle_joint
