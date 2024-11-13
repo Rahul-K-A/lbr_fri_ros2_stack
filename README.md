@@ -44,12 +44,12 @@ Full documentation available on [Read the Docs](https://lbr-stack.readthedocs.io
     ```
 
 2. Create a workspace, clone, and install dependencies
-
+   
     ```shell
     source /opt/ros/humble/setup.bash
     export FRI_CLIENT_VERSION=1.15
     mkdir -p lbr-stack/src && cd lbr-stack
-    vcs import src --input https://raw.githubusercontent.com/lbr-stack/lbr_fri_ros2_stack/humble/lbr_fri_ros2_stack/repos-fri-${FRI_CLIENT_VERSION}.yaml
+    vcs import src --input https://raw.githubusercontent.com/Rahul-K-A/lbr_fri_ros2_stack/refs/heads/humble/lbr_fri_ros2_stack/repos-fri-${FRI_CLIENT_VERSION}.yaml
     rosdep install --from-paths src -i -r -y
     ```
 
