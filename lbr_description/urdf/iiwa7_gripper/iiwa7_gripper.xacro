@@ -23,12 +23,22 @@
         <child link="link_0" />
     </joint>
 
+    <xacro:property name="use_sim" value="$(arg mode)" />
+    
+    <xacro:if value="${use_sim == 'gazebo'}">
+        <xacro:property name="sim" value="true" />
+    </xacro:if>
+    <xacro:unless value="${use_sim == 'gazebo'}">
+        <xacro:property name="sim" value="false" />
+    </xacro:unless>
+
+
     <!-- iiwa -->
     <xacro:iiwa7
         robot_name="$(arg robot_name)"
         mode="$(arg mode)"
         system_parameters_path="$(arg system_parameters_path)" />
-        <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="link_ee" use_fake_hardware="true">
+        <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="link_ee" use_fake_hardware="true" sim_ignition="${sim}">
         <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:robotiq_gripper>
 </robot>
