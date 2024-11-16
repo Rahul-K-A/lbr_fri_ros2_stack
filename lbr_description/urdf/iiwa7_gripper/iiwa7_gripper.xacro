@@ -38,7 +38,7 @@
         robot_name="$(arg robot_name)"
         mode="$(arg mode)"
         system_parameters_path="$(arg system_parameters_path)" />
-        <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="link_ee" use_fake_hardware="true" sim_ignition="${sim}">
+        <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="link_ee" use_fake_hardware="true" sim_ignition="true">
         <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:robotiq_gripper>
 </robot>
