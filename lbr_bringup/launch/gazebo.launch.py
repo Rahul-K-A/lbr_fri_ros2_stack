@@ -48,6 +48,15 @@ def generate_launch_description() -> LaunchDescription:
         controller="joint_state_broadcaster"
     )
     ld.add_action(joint_state_broadcaster)
+    
+    gripper_controller = LBRROS2ControlMixin.node_controller_spawner(
+        controller="gripper_controller"
+    )
+
+    ld.add_action(
+        gripper_controller
+    )
+    
     ld.add_action(
         LBRROS2ControlMixin.node_controller_spawner(
             controller=LaunchConfiguration("ctrl")
