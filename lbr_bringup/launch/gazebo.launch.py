@@ -43,12 +43,6 @@ def generate_launch_description() -> LaunchDescription:
         GazeboMixin.node_create(tf=world_robot_tf)
     )  # spawns robot in Gazebo through robot_description topic of robot_state_publisher
 
-    # controllers
-    joint_state_broadcaster = LBRROS2ControlMixin.node_controller_spawner(
-        controller="joint_state_broadcaster"
-    )
-    ld.add_action(joint_state_broadcaster)
-    
     gripper_controller = LBRROS2ControlMixin.node_controller_spawner(
         controller="gripper_controller"
     )
@@ -56,6 +50,14 @@ def generate_launch_description() -> LaunchDescription:
     ld.add_action(
         gripper_controller
     )
+
+    # controllers
+    joint_state_broadcaster = LBRROS2ControlMixin.node_controller_spawner(
+        controller="joint_state_broadcaster"
+    )
+    ld.add_action(joint_state_broadcaster)
+    
+
     
     ld.add_action(
         LBRROS2ControlMixin.node_controller_spawner(
