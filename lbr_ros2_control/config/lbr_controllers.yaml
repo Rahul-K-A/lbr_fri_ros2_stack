@@ -3,9 +3,12 @@
 /**/controller_manager:
   ros__parameters:
     update_rate: 200
-
+    
     gripper_controller:
       type: joint_trajectory_controller/JointTrajectoryController
+  
+    robotiq_activation_controller:
+      type: robotiq_controllers/RobotiqActivationController
 
     # ROS 2 control broadcasters
     joint_state_broadcaster:
@@ -76,7 +79,8 @@
   
 /**/gripper_controller:
   ros__parameters:
-    joint: robotiq_85_left_knuckle_joint
+    joints: 
+      - robotiq_85_left_knuckle_joint
     command_interfaces:
       - position
     state_interfaces:
