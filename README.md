@@ -1,4 +1,4 @@
-#Note:
+# Note:
     * ** DONT CLONE THE REPO DIRECTLY, USE VCS AS DIRECTED BY THE INSTRUCTIONS BELOW SINCE YOU NEED THE DEPENDENCIES**
     * Use `iiwa7_gripper` as the model for all launch files. It is the custom defined model
 # lbr_fri_ros2_stack
