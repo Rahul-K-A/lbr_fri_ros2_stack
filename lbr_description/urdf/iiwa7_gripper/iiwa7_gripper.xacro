@@ -6,7 +6,7 @@
     <!-- include the lbr iiwa macro -->
     <xacro:include filename="$(find lbr_description)/urdf/iiwa7/iiwa7_description.xacro" />
     <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro"/>
-    
+    <xacro:include filename="$(find gazebo_sensor_collection)/urdf/cameras/rgbd/realsense_d415.urdf.xacro" />
     <xacro:arg name="robot_name" default="lbr" />
     <xacro:arg name="mode" default="mock" />
     <xacro:arg
@@ -44,7 +44,11 @@
         robot_name="$(arg robot_name)"
         mode="$(arg mode)"
         system_parameters_path="$(arg system_parameters_path)" />
-        <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="link_ee" use_fake_hardware="${fake_hardware}" sim_ignition="${use_sim}">
+    <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="link_ee" use_fake_hardware="${fake_hardware}" sim_ignition="${use_sim}">
         <origin xyz="0 0 0" rpy="0 0 0" />
-        </xacro:robotiq_gripper>
+    </xacro:robotiq_gripper>
+    
+    <xacro:sensor_realsense_d415 name="real_sense" parent="link_ee">
+        <origin xyz="0 0.05 0.03 " rpy="0 -1.57079 -1.57079" />
+    </xacro:sensor_realsense_d415> 
 </robot>
