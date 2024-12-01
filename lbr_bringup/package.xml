@@ -25,6 +25,7 @@
   <exec_depend>ros_gz_bridge</exec_depend>
   <exec_depend>rviz2</exec_depend>
   <exec_depend>xacro</exec_depend>
+  <exec_depend>ros_gz_image</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
