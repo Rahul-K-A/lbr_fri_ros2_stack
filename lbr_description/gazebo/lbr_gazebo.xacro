@@ -11,6 +11,9 @@
                     <namespace>/${robot_name}</namespace>
                 </ros>
             </plugin>
+            <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
+                <render_engine>ogre2</render_engine>
+            </plugin>
         </gazebo>
 
         <!-- macros -->
@@ -62,5 +65,15 @@
         <xacro:gazebo_joint_reference name="robotiq_85_right_finger_joint" />
         <xacro:gazebo_link_reference name="robotiq_85_right_finger_tip_link" />
         <xacro:gazebo_joint_reference name="robotiq_85_right_finger_tip_joint" /> 
+
+
+
+        <xacro:gazebo_link_reference name="real_sense_color_frame" />
+        <xacro:gazebo_link_reference name="real_sense_color_optical_frame" />
+        <xacro:gazebo_link_reference name="real_sense_depth_frame" />
+        <xacro:gazebo_link_reference name="real_sense_link" />
+        
+
+
     </xacro:macro>
 </robot>

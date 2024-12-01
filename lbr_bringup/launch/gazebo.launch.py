@@ -3,7 +3,7 @@ from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from lbr_bringup.description import LBRDescriptionMixin
 from lbr_bringup.gazebo import GazeboMixin
 from lbr_bringup.ros2_control import LBRROS2ControlMixin
-
+from launch_ros.actions import Node
 
 def generate_launch_description() -> LaunchDescription:
     ld = LaunchDescription()
@@ -64,4 +64,14 @@ def generate_launch_description() -> LaunchDescription:
             controller=LaunchConfiguration("ctrl")
         )
     )
+
+    start_gazebo_ros_image_bridge_cmd = Node(
+        package='ros_gz_image',
+        executable='image_bridge',
+        arguments=['rgbd_camera/depth', 'rgbd_camera/color'],
+        output='screen',
+    )
+    
+    ld.add_action(start_gazebo_ros_image_bridge_cmd)
+
     return ld
