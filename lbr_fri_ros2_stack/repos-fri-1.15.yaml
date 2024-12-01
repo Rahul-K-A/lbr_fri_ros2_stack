@@ -19,3 +19,7 @@ repositories:
     type: git
     url: https://github.com/Rahul-K-A/ros2_robotiq_gripper.git
     version: humble-bluejay
+  gazebo_sensor_collection:
+    type: git
+    url: https://github.com/Rahul-K-A/gazebo_sensor_collection.git
+    version: humble
