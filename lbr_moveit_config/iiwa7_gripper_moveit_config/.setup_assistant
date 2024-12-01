@@ -7,19 +7,4 @@ moveit_setup_assistant_config:
   package_settings:
     author_name: rahul
     author_email: rkalpan1@jh.edu
-    generated_timestamp: 1732670118
-  control_xacro:
-    command:
-      - position
-    state:
-      - position
-      - velocity
-  modified_urdf:
-    xacros:
-      - control_xacro
-  control_xacro:
-    command:
-      - position
-    state:
-      - position
-      - velocity
+    generated_timestamp: 1733016618

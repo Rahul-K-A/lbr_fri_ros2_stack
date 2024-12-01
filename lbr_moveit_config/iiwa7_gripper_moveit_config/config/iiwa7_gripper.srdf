@@ -34,8 +34,8 @@
     <disable_collisions link1="link_1" link2="link_5" reason="Never"/>
     <disable_collisions link1="link_1" link2="link_6" reason="Never"/>
     <disable_collisions link1="link_1" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_1" link2="real_sense_link" reason="Never"/>
     <disable_collisions link1="link_1" link2="robotiq_85_base_link" reason="Never"/>
-    <disable_collisions link1="link_1" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="link_1" link2="robotiq_85_left_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_1" link2="robotiq_85_right_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="link_3" reason="Adjacent"/>
@@ -43,18 +43,21 @@
     <disable_collisions link1="link_2" link2="link_5" reason="Never"/>
     <disable_collisions link1="link_2" link2="link_6" reason="Never"/>
     <disable_collisions link1="link_2" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_2" link2="real_sense_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_base_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_left_inner_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_left_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_right_finger_link" reason="Never"/>
+    <disable_collisions link1="link_2" link2="robotiq_85_right_finger_tip_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_right_inner_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_2" link2="robotiq_85_right_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_3" link2="link_4" reason="Adjacent"/>
     <disable_collisions link1="link_3" link2="link_5" reason="Never"/>
     <disable_collisions link1="link_3" link2="link_6" reason="Never"/>
     <disable_collisions link1="link_3" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_3" link2="real_sense_link" reason="Never"/>
     <disable_collisions link1="link_3" link2="robotiq_85_base_link" reason="Never"/>
     <disable_collisions link1="link_3" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="link_3" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
@@ -67,6 +70,7 @@
     <disable_collisions link1="link_4" link2="link_5" reason="Adjacent"/>
     <disable_collisions link1="link_4" link2="link_6" reason="Never"/>
     <disable_collisions link1="link_4" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_4" link2="real_sense_link" reason="Never"/>
     <disable_collisions link1="link_4" link2="robotiq_85_base_link" reason="Never"/>
     <disable_collisions link1="link_4" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="link_4" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
@@ -78,6 +82,7 @@
     <disable_collisions link1="link_4" link2="robotiq_85_right_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_5" link2="link_6" reason="Adjacent"/>
     <disable_collisions link1="link_5" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_5" link2="real_sense_link" reason="Never"/>
     <disable_collisions link1="link_5" link2="robotiq_85_base_link" reason="Never"/>
     <disable_collisions link1="link_5" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="link_5" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
@@ -88,6 +93,7 @@
     <disable_collisions link1="link_5" link2="robotiq_85_right_inner_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_5" link2="robotiq_85_right_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_6" link2="link_7" reason="Adjacent"/>
+    <disable_collisions link1="link_6" link2="real_sense_link" reason="Never"/>
     <disable_collisions link1="link_6" link2="robotiq_85_base_link" reason="Never"/>
     <disable_collisions link1="link_6" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="link_6" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
@@ -97,6 +103,7 @@
     <disable_collisions link1="link_6" link2="robotiq_85_right_finger_tip_link" reason="Never"/>
     <disable_collisions link1="link_6" link2="robotiq_85_right_inner_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_6" link2="robotiq_85_right_knuckle_link" reason="Never"/>
+    <disable_collisions link1="link_7" link2="real_sense_link" reason="Adjacent"/>
     <disable_collisions link1="link_7" link2="robotiq_85_base_link" reason="Adjacent"/>
     <disable_collisions link1="link_7" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="link_7" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
@@ -106,6 +113,15 @@
     <disable_collisions link1="link_7" link2="robotiq_85_right_finger_tip_link" reason="Never"/>
     <disable_collisions link1="link_7" link2="robotiq_85_right_inner_knuckle_link" reason="Never"/>
     <disable_collisions link1="link_7" link2="robotiq_85_right_knuckle_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_base_link" reason="Adjacent"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_left_finger_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_left_inner_knuckle_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_left_knuckle_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_right_finger_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_right_finger_tip_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_right_inner_knuckle_link" reason="Never"/>
+    <disable_collisions link1="real_sense_link" link2="robotiq_85_right_knuckle_link" reason="Never"/>
     <disable_collisions link1="robotiq_85_base_link" link2="robotiq_85_left_finger_link" reason="Never"/>
     <disable_collisions link1="robotiq_85_base_link" link2="robotiq_85_left_finger_tip_link" reason="Never"/>
     <disable_collisions link1="robotiq_85_base_link" link2="robotiq_85_left_inner_knuckle_link" reason="Adjacent"/>
