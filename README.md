@@ -1,6 +1,8 @@
-# Note:
+# Note
     * ** DONT CLONE THE REPO DIRECTLY, USE VCS AS DIRECTED BY THE INSTRUCTIONS BELOW SINCE YOU NEED THE DEPENDENCIES**
     * Use `iiwa7_gripper` as the model for all launch files. It is the custom defined model
+
+    
 # lbr_fri_ros2_stack
 [![License](https://img.shields.io/github/license/lbr-stack/lbr_fri_ros2_stack)](https://github.com/lbr-stack/lbr_fri_ros2_stack/tree/humble?tab=Apache-2.0-1-ov-file#readme) 
 [![Documentation Status](https://readthedocs.org/projects/lbr-stack/badge/?version=latest)](https://lbr-stack.readthedocs.io/en/latest/?badge=latest)
